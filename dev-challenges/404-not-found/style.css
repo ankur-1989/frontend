@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+}
+
+header {
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    line-height: 25px;
+    font-size: 24px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #333333;
+    padding: 20px;
+}
+
+h1{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: #333333;
+    width: 216px;
+    height: 68px;
+    letter-spacing: -0.035em;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Space Mono';
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+footer {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD; 
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 40px);
+    margin: auto;
+}
+footer > a:first-child {
+    color: #BDBDBD; 
+}
+footer > a:last-child {
+  text-decoration: none;
+  color: #BDBDBD; 
+}
+section {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+img {
+    width: 100%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: calc(100% - 40px);
+    margin: auto;
+}
+
+@media screen and (max-width: 412px) {
+    section {
+        gap: 20px;
+    }
+    h1 {
+        line-height: 1.2;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    section {
+        gap: 20px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 18px;
+    }
+    footer {
+        bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main {
+        flex-direction: row;
+        
+    }
+
+}
